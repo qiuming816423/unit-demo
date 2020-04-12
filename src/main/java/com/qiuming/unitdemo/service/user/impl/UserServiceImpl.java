@@ -8,8 +8,8 @@ import com.qiuming.unitdemo.service.user.IUserService;;import java.util.List;
 
 @Service
 public class UserServiceImpl implements IUserService {
-@Autowired
-private UserMapper userMapper;
+    @Autowired
+    private UserMapper userMapper;
 
     @Override
     public int add(int a, int b) {
@@ -20,8 +20,10 @@ private UserMapper userMapper;
     public int dec(int a, int b) {
         if (a == 3) {
             return a - b;
-        } else {
+        } else if (a == 4) {
             return a + b;
+        } else {
+            return a*b;
         }
     }
 

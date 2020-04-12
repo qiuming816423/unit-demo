@@ -1,6 +1,7 @@
-package com.qiuming.unitdemo.service.user;
+package com.qiuming.unitdemo.service.user.impl;
 
 import com.qiuming.unitdemo.bean.user.User;
+import com.qiuming.unitdemo.service.user.IUserService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,7 +15,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class UserServiceTest {
+public class UserServiceImplTest {
     @Autowired
     private IUserService userService;
     @Test
